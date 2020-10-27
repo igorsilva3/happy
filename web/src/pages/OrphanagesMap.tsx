@@ -32,7 +32,7 @@ function OrphanagesMap(){
             >
                 {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}
                 <TileLayer 
-                    url={'https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/256/{z}/{x}/{y}@2x?access_token=' + process.env.REACT_APP_MAPBOX_TOKEN} 
+                    url={`https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
                 />
             </Map>
 
@@ -41,6 +41,6 @@ function OrphanagesMap(){
             </Link>
         </div>
     );
-}
+};
 
 export default OrphanagesMap;
